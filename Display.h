@@ -51,7 +51,6 @@ namespace rs
 	private:
 		Lang _lng;
 		Mode _md;
-		std::vector<std::string> _units;
 	};
 }
 
