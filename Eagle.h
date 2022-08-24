@@ -1,9 +1,9 @@
 #pragma once
-#include "Magic_carpet.h"
+#include "Air.h"
 
 namespace rs
 {
-	class Eagle : public Magic_carpet
+	class Eagle : public Air
 	{
 	public:
 		Eagle(const std::string & name = "Eagle", int speed = 8, float cancellation = 0.94f);

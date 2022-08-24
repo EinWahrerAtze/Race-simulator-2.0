@@ -26,7 +26,7 @@ namespace rs
 		auto find(const T & element) -> T
 		{
 			auto found = std::find(std::begin(elements), std::end(elements), element);
-			return (found != std::end(elements) ? element : 0);
+			return (found != std::end(elements) ? element : '0');
 		}
 	private:
 		std::array<T, S> elements;

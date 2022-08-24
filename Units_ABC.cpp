@@ -3,15 +3,17 @@
 namespace rs
 {
 	Units_ABC::Units_ABC(const std::string & name, int speed, float result)
-		: m_name{name}, m_speed{speed}, m_result{result} { }
-
-	auto Units_ABC::get_name() const -> const std::string &
+		: _name{ name }, _speed{ speed }, _result{ result }
 	{
-		return m_name;
+	}
+
+	auto Units_ABC::get_name() const -> const std::string
+	{
+		return _name;
 	}
 
 	auto Units_ABC::get_result() const -> float
 	{
-		return m_result;
+		return _result;
 	}
 }

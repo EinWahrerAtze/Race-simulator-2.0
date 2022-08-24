@@ -2,10 +2,11 @@
 
 namespace rs
 {
-	Eagle::Eagle(const std::string & name, int speed, float cancellation) : Magic_carpet(name, speed, cancellation) { }
+	Eagle::Eagle(const std::string & name, int speed, float cancellation) 
+		: Air(name, speed, cancellation) { }
 
 	auto Eagle::calculation(float distance) -> void
 	{
-		commom_calculation(distance);
+		main_calculation(distance);
 	}
 }

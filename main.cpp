@@ -74,11 +74,10 @@ auto add_new_unit(int index, const rs::Display & d) -> ptr
 	}
 }
 
-
 auto main() -> int
 {
 #if defined (_WIN32)
-	//	setlocale(LC_ALL, "Russian");
+//	setlocale(LC_ALL, "Russian");
 	SetConsoleOutputCP(65001);
 #else
 	clear();
@@ -267,6 +266,7 @@ auto main() -> int
 		}
 	}
 
-	std::cout << "bye\n";
+	clear();
+	std::cout << "Bye!\n";
 	return 0;
 }
